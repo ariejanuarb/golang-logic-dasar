@@ -12,7 +12,7 @@ n = 9
 */
 
 func main() {
-	n := 9
+	n := 10
 	for i := 1; i <= n; i++ {
 		fmt.Print(i, "\t") // print horizontal untuk membuat array 1 dimensi
 	}

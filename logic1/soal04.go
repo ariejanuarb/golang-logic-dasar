@@ -18,7 +18,7 @@ n = 9
 */
 
 // solusi 1
-func main() {
+/*func main() {
 	n := 9
 	a := 1
 	b := 1
@@ -39,17 +39,30 @@ func main() {
 		b = c // geser posisi b ke c
 		fmt.Print(c, "\t")
 	}
-}
+}*/
 
 //solusi 2
-//func main() {
-//	n := 9
-//	a := 1
-//	b := 1
-//	for i := 0; i < n; i++ {
-//		fmt.Print(a, "\t")
-//		sum := a + b
-//		a = b
-//		b = sum
-//	}
-//}
+/*func main() {
+	n := 9
+	a := 1
+	b := 1
+	for i := 0; i < n; i++ {
+		fmt.Print(a, "\t")
+		sum := a + b
+		a = b // swap
+		b = sum
+	}
+}
+*/
+
+func main() {
+	n := 12
+	a := 3
+	b := 1
+	for i := 0; i < n; i++ {
+		fmt.Print(a, "\t")
+		sum := a - b
+		a = b // swap
+		b = sum
+	}
+}
