@@ -34,7 +34,7 @@ func main() {
 			} else if i+j == 10 {
 				fmt.Print(i, "\t")
 			} else {
-				fmt.Print("", "", "", "\t")
+				fmt.Print("\t")
 			}
 			// fmt.Print(i, "\t") // mencetak baris angka
 			// fmt.Print(j, "-", i, "\t") // mencetak nomor looping (ke-j) & baris angka 1-9 (ke-i)

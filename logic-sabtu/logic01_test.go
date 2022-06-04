@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestSoal01(t *testing.T) {
+func TestLogic01Soal01(t *testing.T) {
 	n := 10
 	angka := 1
 	for i := 1; i < n; i += 1 {
@@ -15,6 +15,20 @@ func TestSoal01(t *testing.T) {
 			angka++
 		} else {
 			fmt.Print(3, "\t")
+		}
+	}
+}
+
+func TestLogic01Soal0101(t *testing.T) {
+	n := 10
+	a := 1
+	b := 3
+	for i := 0; i < n; i++ {
+		if i%2 == 0 {
+			fmt.Print(a, "\t")
+			a++
+		} else {
+			fmt.Print(b, "\t")
 		}
 	}
 }
