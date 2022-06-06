@@ -1,9 +1,7 @@
 package main
 
-import
-import "github.com/ariejanuarb/golang-logic/logic3"
-github.com/ariejanuarb/golang-logic/logic3
+import "github.com/ariejanuarb/golang-logic/logic03"
 
 func main() {
-	logic3.Logic03Soal03(9)
+	logic03.Logic03Soal03(9)
 }

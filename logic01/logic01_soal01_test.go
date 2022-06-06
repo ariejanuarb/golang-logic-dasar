@@ -1,4 +1,4 @@
-package logic_sabtu
+package logic01
 
 import (
 	"fmt"
