@@ -1,23 +1,8 @@
-package main
+package logic02
 
 import (
 	"fmt"
 )
-
-func main() {
-	Logic02Soal01(9)
-	//Logic02Soal02(9)
-	//Logic02Soal03(9)
-	//Logic02Soal04(9)
-	//Logic02Soal05(9)
-	//Logic02Soal06(9)
-	//Logic02Soal07(9)
-	//Logic02Soal08(9)
-	//Logic02Soal09(9)
-	//Logic02Soal10(9)
-	//Logic03Soal01(9)
-
-}
 
 func Logic02Soal01(n int) {
 	a := 3                   // bilangan awal

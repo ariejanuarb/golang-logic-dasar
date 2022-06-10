@@ -1,7 +1,17 @@
 package array
 
-func NewStringArray(baris int, kolom int) [][]string { // function NewString array, parameter baris int, kolom int, return value array 2 dimensi tipe string [][]string
-	result := make([][]string, baris) // membuat slice, length baris
+/* function NewString array,
+parameter baris int, kolom int,
+return value array 2 dimensi tipe string [][]string
+
+logic04 terlalu rumit jika diselesaikan dengan cara manual (buat array dengan \t \n)
+lebih efisien langsug pakai struktur data array
+*/
+
+func NewStringArray(baris int, kolom int) [][]string {
+	// make() = membuat slice, dari array 2D string, parameter baris.
+	// deklarasikan result sebagai slice baris (ulangi lagi materi slice)
+	result := make([][]string, baris)
 	for i := range result {
 		result[i] = make([]string, kolom)
 	}

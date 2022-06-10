@@ -1,12 +1,6 @@
-package main
+package logic03
 
 import "fmt"
-
-func main() {
-	//Logic03Soal01(9)
-	//Logic03Soal02(9)
-	Logic03Soal03(9)
-}
 
 func Logic03Soal01(n int) { // segitiga kiri = (logic 07 + logic 10)  + logic 05
 	a := 3
@@ -52,6 +46,13 @@ func Logic03Soal02(n int) { // sgitiga atas = (logic 08 + logic 10) + logic 05
 	}
 }
 
-func Logic03Soal03(n int) { // 1/2 segitig = logic 8 / 2
+func Logic03Soal03(n int) {
+	a := 3
+	nt := n / 2
 
+	for i := 0; i < n; i++ {
+		for j := 0; j < n; j++ {
+
+		}
+	}
 }
