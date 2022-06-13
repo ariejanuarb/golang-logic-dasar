@@ -45,14 +45,3 @@ func Logic03Soal02(n int) { // sgitiga atas = (logic 08 + logic 10) + logic 05
 		}
 	}
 }
-
-func Logic03Soal03(n int) {
-	a := 3
-	nt := n / 2
-
-	for i := 0; i < n; i++ {
-		for j := 0; j < n; j++ {
-
-		}
-	}
-}

@@ -10,8 +10,7 @@ lebih efisien langsug pakai struktur data array
 
 func NewStringArray(baris int, kolom int) [][]string {
 	// make() = membuat slice, dari array 2D string, parameter baris.
-	// deklarasikan result sebagai slice baris (ulangi lagi materi slice)
-	result := make([][]string, baris)
+	result := make([][]string, baris) // deklarasikan result sebagai slice baris (ulangi lagi materi slice)
 	for i := range result {
 		result[i] = make([]string, kolom)
 	}

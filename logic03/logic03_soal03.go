@@ -2,33 +2,50 @@ package logic03
 
 import array2 "github.com/ariejanuarb/golang-logic-dasar/array"
 
-func Logic03Soal03(n int) {
+/*
+Soal 03
+n = 9
+	0	1	2	3	4	5	6	7	8
+0		3	3	3	3
+1			6	6	6				6
+2				9	9			9	9
+3					12		12	12	12
+4	15	15	15	15		15	15	15	15
+5	12	12	12		12
+6	9	9			9	9
+7	6				6	6	6
+8					3	3	3	3
+*/
+
+func Logic03Soal0300(n int) {
 	// 1. create array
 	array := array2.NewNumberArray(n, n) // 1. create array
 
 	// 2. isi array
-	// loop baris : start
-	angka := 3 // int
-	for i := 0; i < len(array); i++ {
-		nt := n / 2
-		// loop kolom : start
-		for j := 0; j < len(array[i]); j++ {
-			// isi array
-			if i < j && j <= nt {
-				array[i][j] = int32(angka)
+	angka := 3                        // 2.1 angka awal = 3
+	for i := 0; i < len(array); i++ { // 2.2 loop baris : start
+		nt := n / 2                          // 2.3 nilai tengah sebagai batas turunnya angka
+		for j := 0; j < len(array[i]); j++ { // 2.2 loop kolom : start
+			/* temukan pola pada koordinat (baris,kolom) dari kotak yang berisi angka*/
+			// 2.5 buat 1/2 segitiga kiri atas
+			if i < j && j <= nt { //ketika i < j (baris < kolom), dari awal kolom sampai batas tengah (diatas batas tengah tidak ada bilangan)
+				array[i][j] = int32(angka) // angka awal(int) di convert ke int32
+				// 2.5.1 pantulkan rumus diatas untuk buat 1/2 segitiga kanan bawah
 			} else if i > j && j >= nt {
 				array[i][j] = int32(angka)
-			} else if i+j < n-1 && i >= nt {
+				// 2.6 buat 1/2 segitiga kiri bawah (dasar rumus dari logic03 soal01)
+			} else if i+j < n-1 && i >= nt { // i+j = 7 && i mulai dari 4 atau >= nt, kenapa pakai i? karena yg mau di print full hanya baris 4 saja
 				array[i][j] = int32(angka)
-			} else if i+j > n-1 && i <= nt {
+				// 2.6.1 pantulkan rumus diatas untuk buat 1/2 segitiga kanan atas
+			} else if i+j > n-1 && i <= nt { // ganti tanda > jadi <.
 				array[i][j] = int32(angka)
 			}
 		}
-		// jika baris kurang dari nilai tengah
-		if i < nt {
+		// 2.4 kondisi jika nomor baris kurang dari nilai tengah :
+		if i < nt { // angka +3 sampai nilai tengah
 			angka += 3
 		} else {
-			angka -= 3
+			angka -= 3 // diatas batas tengah, angka -3
 		}
 	}
 	// 3. print array

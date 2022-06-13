@@ -5,9 +5,12 @@ import (
 )
 
 func Logic04Soal01(n int) {
-	// create array
+	//1. create new array
 	array := array2.NewNumberArray(n, n)
 
-	// print array
+	//2. inserta array values
+
+	//3. print array
+	//fmt.Println(array)
 	array2.PrintNumberArray(array)
 }
