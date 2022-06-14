@@ -1,6 +1,6 @@
 package main
 
-import "github.com/ariejanuarb/golang-logic-dasar/logic02"
+import "github.com/ariejanuarb/golang-logic-dasar/logic03"
 
 func main() {
 	/***LOGIC02 metode manual array : ***/
@@ -40,23 +40,52 @@ func main() {
 	//logic02.Logic02Soal04arr01(9)
 	//logic02.Logic02Soal04arr02(9)
 
-	logic02.Logic02Soal05arr00(9)
+	//logic02.Logic02Soal05arr00(9)
+	//logic02.Logic02Soal05arr01(9)
+	//logic02.Logic02Soal05arr02(5)
+
+	//logic02.Logic02Soal06arr00(9)
+
+	//logic02.Logic02Soal07arr00(9)
+	//logic02.Logic02Soal07arr01(9)
+	//logic02.Logic02Soal07arr02(9)
+
+	//logic02.Logic02Soal08arr00(9)
+
+	//logic02.Logic02Soal09arr00(9)
+	//logic02.Logic02Soal09arr01(9)
+	//logic02.Logic02Soal09arr02(9)
+
+	//logic02.Logic02Soal10arr00(9)
 
 	/*** LOGIC02 metode generic array : ***/
 
 	/*--------------------------------------*/
-
 	/*** LOGIC03 metode manual array : ***/
 	//logic03.Logic03Soal01(9)
+	//logic03.Logic03Soal02(9)
 
 	/*** LOGIC03 metode auto array : ***/
-	//logic03.Logic03Soal0300(9)
+	//logic03.Logic03Soal01arr00Step01(9)
+	//logic03.Logic03Soal01arr00Step02(9)
+
+	//logic03.Logic03Soal02arr00Step01(9)
+	//logic03.Logic03Soal02arr00Step02(9)
+
+	//logic03.Logic03Soal03arr00(9)
+	//logic03.Logic03Soal03arr00Step01(9)
+	//logic03.Logic03Soal03arr00Step02(9)
+
+	//logic03.Logic03Soal04arr00Step01(9)
+
+	logic03.Logic03Soal05arr00(9)
 
 	/*** LOGIC03 metode generic array : ***/
 
 	/*--------------------------------------*/
 	/*** LOGIC04 metode auto array : ***/
 	//logic04.Logic04Soal01(5)
+
 	//logic04.Logic04Soal02(5)
 
 	//logic04.Logic04Soal05Step01(4)

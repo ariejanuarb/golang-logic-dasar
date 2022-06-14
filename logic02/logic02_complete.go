@@ -80,7 +80,7 @@ func Logic02Soal05(n int) {
 func Logic02Soal06(n int) {
 	nt := n / 2
 	for i := 0; i < n; i++ { // loop baris:start
-		a := 3                   // nilai awal sekaligus nilai reset
+		a := 3                   // nilai awal sekaligus nilai reset setiap looping baris baru dimulai
 		for j := 0; j < n; j++ { // loop kolom:start
 			if j < nt {
 				fmt.Print(a, "\t")
@@ -98,7 +98,7 @@ func Logic02Soal07(n int) {
 	a := 3
 	for i := 0; i < n; i++ { // loop baris:start
 		for j := 0; j < n; j++ { //loop kolom:start
-			if i >= j {
+			if i >= j { // jika baris lebih besar dan sama dengan kolom
 				fmt.Print(a, "\t")
 			} else {
 				fmt.Print(" ", "\t")
