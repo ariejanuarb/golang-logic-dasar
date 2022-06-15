@@ -34,3 +34,29 @@ func Logic03Soal05arr00(n int) {
 	// print array
 	array2.PrintNumberArrayZeroEmpty(array)
 }
+
+func Logic03Soal05arr01(n int) {
+	array030501 := array2.NewNumberArray(n, n)
+	tengah := n / 2
+	for baris := 0; baris < len(array030501); baris++ {
+		angka := 3
+		for kolom := 0; kolom < len(array030501); kolom++ {
+			if kolom%4 == 0 {
+				array030501[baris][kolom] = int32(angka)
+			} else if kolom%4 == 1 && baris == n-1 {
+				array030501[baris][kolom] = int32(angka)
+			} else if kolom%4 == 2 {
+				array030501[baris][kolom] = int32(angka)
+			} else if kolom%4 == 3 && baris == n-n {
+				array030501[baris][kolom] = int32(angka)
+			}
+			if kolom < tengah {
+				angka += 3
+			} else {
+				angka -= 3
+			}
+		}
+
+	}
+	array2.PrintNumberArrayZeroEmpty(array030501)
+}

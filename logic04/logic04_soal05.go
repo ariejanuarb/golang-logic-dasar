@@ -32,7 +32,7 @@ func Logic04Soal05Step02(n int) {
 	array2.PrintNumberArray(kotak)
 }
 
-func Logic04Soal05(n int) {
+func Logic04Soal05arr00(n int) {
 	// 1. create array
 	kotak := array2.NewNumberArray(n, n)
 	// 1.1 tulis angka awal

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/ariejanuarb/golang-logic-dasar/logic03"
+import "github.com/ariejanuarb/golang-logic-dasar/logic04"
 
 func main() {
 	/***LOGIC02 metode manual array : ***/
@@ -76,21 +76,31 @@ func main() {
 	//logic03.Logic03Soal03arr00Step01(9)
 	//logic03.Logic03Soal03arr00Step02(9)
 
-	//logic03.Logic03Soal04arr00Step01(9)
+	//logic03.Logic03Soal04arr00(9) // wajib diulang!
+	//logic03.Logic03Soal04arr01(9)
 
-	logic03.Logic03Soal05arr00(9)
+	//logic03.Logic03Soal05arr00(9) // wajib diulang! (kondisi berkebalikan dari soal 04)
+	//logic03.Logic03Soal05arr01(11)
 
 	/*** LOGIC03 metode generic array : ***/
 
 	/*--------------------------------------*/
 	/*** LOGIC04 metode auto array : ***/
-	//logic04.Logic04Soal01(5)
+	//logic04.Logic04Soal01arr00(9)
+	//logic04.Logic04Soal01arr01(9)
 
-	//logic04.Logic04Soal02(5)
+	//logic04.Logic04Soal02arr00(9)
+	//logic04.Logic04Soal02arr01(9)
 
-	//logic04.Logic04Soal05Step01(4)
-	//logic04.Logic04Soal05Step02(4)
-	//logic04.Logic04Soal05(6)
+	//logic04.Logic04Soal03arr00(9)
+
+	//logic04.Logic04Soal04arr00(9)
+
+	//logic04.Logic04Soal05Step01(9)
+	//logic04.Logic04Soal05Step02(9)
+	logic04.Logic04Soal05arr00(4)
+	logic04.Logic04Soal05arr00(5)
+	logic04.Logic04Soal05arr00(6)
 
 	/*** LOGIC04 metode generic array : ***/
 
